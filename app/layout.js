@@ -1,9 +1,11 @@
-import './globals.css';
+import "./globals.css";
 
 export const metadata = {
-  title: 'NextLevel Food',
-  description: 'Delicious meals, shared by a food-loving community.',
+  title: "NextLevel Food",
+  description: "Delicious meals, shared by a food-loving community.",
 };
+
+// 루트 레이아웃은 항상 활성화 되어있으며 하위 폴더들에 layout.js가 존재한다면 중첩되어 동작함
 
 export default function RootLayout({ children }) {
   return (
@@ -15,11 +17,11 @@ export default function RootLayout({ children }) {
               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop
                   offset="0%"
-                  style={{ stopColor: '#59453c', stopOpacity: '1' }}
+                  style={{ stopColor: "#59453c", stopOpacity: "1" }}
                 />
                 <stop
                   offset="100%"
-                  style={{ stopColor: '#8f3a09', stopOpacity: '1' }}
+                  style={{ stopColor: "#8f3a09", stopOpacity: "1" }}
                 />
               </linearGradient>
             </defs>
