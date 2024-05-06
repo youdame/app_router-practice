@@ -9,7 +9,7 @@ import macncheeseImg from "@/assets/macncheese.jpg";
 import pizzaImg from "@/assets/pizza.jpg";
 import schnitzelImg from "@/assets/schnitzel.jpg";
 import tomatoSaladImg from "@/assets/tomato-salad.jpg";
-import classes from "./SlideShow.module.css";
+import styles from "./SlideShow.module.css";
 
 const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
@@ -35,12 +35,12 @@ export default function ImageSlideshow() {
   }, []);
 
   return (
-    <div className={classes.slideshow}>
+    <div className={styles.slideshow}>
       {images.map((image, index) => (
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? classes.active : ""}
+          className={index === currentImageIndex ? styles.active : ""}
           alt={image.alt}
         />
       ))}
